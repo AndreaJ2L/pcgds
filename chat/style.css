@@ -1,0 +1,70 @@
+/* Основний контейнер для чату */
+#chat {
+    width: 500px;
+    height: 300px;
+    border: 1px solid #333;
+    padding: 10px;
+    background-color: #f9f9f9;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Повідомлення користувачів */
+#chat p {
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    border-left: 3px solid #888;
+}
+
+#chat p strong {
+    color: #333;
+}
+
+/* Поле для введення імені та повідомлення */
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Кнопка відправки повідомлення */
+button {
+    padding: 10px 20px;
+    background-color: #5c73b8;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #413e87;
+}
+
+/* Очищення поля для повідомлень */
+#message-box {
+    width: 70%;
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 600px) {
+    #chat {
+        width: 100%;
+        height: 200px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    #message-box {
+        width: 100%;
+    }
+}
